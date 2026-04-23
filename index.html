@@ -1,35 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Transport Choice System</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-<body>
+<h1>🚗 Transport Choice System</h1>
 
-<div class="container">
-  <h1>🚗 Transport Choice System</h1>
-
-  <div class="card">
-    <label>Number of Respondents</label>
-    <input type="number" id="numRespondents" min="1">
-    <button onclick="startSurvey()">Start Survey</button>
-  </div>
-
-  <div id="survey"></div>
-
-  <button id="calculateBtn" onclick="calculate()" style="display:none;">
-    Calculate Results
-  </button>
-
-  <div id="results"></div>
-
-  <canvas id="utilityChart"></canvas>
-  <canvas id="probChart"></canvas>
-  <canvas id="weightChart"></canvas>
+<div class="card">
+  <label>Number of Respondents</label>
+  <input type="number" id="numRespondents" min="1">
+  <button onclick="startSurvey()">Start Survey</button>
 </div>
 
-<script src="script.js"></script>
-</body>
-</html>
+<div id="survey"></div>
+
+<button id="calculateBtn" onclick="calculate()" class="primary-btn" style="display:none;">
+  Calculate Results
+</button>
+
+<div id="results"></div>
+
+<canvas id="utilityChart"></canvas>
+<canvas id="probChart"></canvas>
+<canvas id="weightChart"></canvas>
